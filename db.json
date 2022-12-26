@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "firstname": "Drisya",
+      "lastname": "G",
+      "birthdate": "2022-03-22",
+      "gender": "f",
+      "education": "graduate",
+      "company": "TCS",
+      "jobExperience": 3,
+      "salary": 6,
+      "profile": "drisya.jpeg",
+      "id": 1
+    },
+    {
+      "firstname": "Drisya",
+      "lastname": "G",
+      "birthdate": "2022-12-01",
+      "gender": "f",
+      "education": "graduate",
+      "company": "TCS",
+      "jobExperience": 3,
+      "salary": 3,
+      "profile": "soja.jpg",
+      "id": 2
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

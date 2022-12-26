@@ -1,0 +1,55 @@
+.dashboard{
+    /* background-color: rgb(167, 185, 178);
+     */
+     background: url('../../assets/images/back2.jpg')no-repeat;
+     background-size: cover;
+}
+.Empadd{
+    border: 2px solid white;
+    color: rgb(118, 17, 250);
+    background-color: rgb(247, 236, 236);
+}
+.Empadd:hover{
+    border: 2px solid white;
+    color:  rgb(247, 236, 236);
+    background-color: rgb(118, 17, 250);
+}
+
+
+.card-header .title-text{
+    color: black;
+}
+.rotate{
+    perspective: 100rem;
+}
+.back{
+    position: absolute;
+    top: -100%;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transform: rotateY(180deg);
+    transition: top .8s opacity .4s;
+}
+.back-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rotate:hover .coffee-card{
+    transform: rotateY(180deg);
+}
+.rotate:hover .back{
+    opacity: 1;
+    top: 0;
+    user-select: auto;
+    pointer-events: auto;
+
+}
+.back-content .button{
+    color:rgb(241, 171, 145)
+}

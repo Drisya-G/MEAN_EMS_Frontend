@@ -1,0 +1,50 @@
+/* .img{
+    width: 100%;
+    height: 600px;
+} */
+
+.pic{
+    height: 100vh;
+    width: 100%;
+    background: url('../../assets/images/banner3.jpg')no-repeat;
+    background-size: cover;
+
+}
+.btn{
+    margin-top: 70px;
+    background-color: rgb(23, 248, 3);
+   
+}
+.log{
+    position: sticky;
+    top: 0px;
+}
+
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+}
+.heading{
+    animation-name: slide;
+    animation-duration: 2s;
+}
+.main{
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}

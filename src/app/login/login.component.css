@@ -1,0 +1,10 @@
+.loginpage{
+    /* background-color: rgb(240, 239, 240); */
+    background: url('../../assets/images/reg.jpg')no-repeat ;
+    background-size: cover;
+}
+.log{
+    /* background-color: rgb(213, 229, 236); */
+    background: url('../../assets/images/back5.jpg')no-repeat ;
+    background-size: cover;
+}
