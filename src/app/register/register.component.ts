@@ -27,11 +27,6 @@ export class RegisterComponent  implements OnInit{
   }
 
   
-  // register() {
-  //   alert('successfully registered');
-  //   this.router.navigateByUrl('login')
-
-  // }
 
 
   register() {
@@ -59,8 +54,5 @@ export class RegisterComponent  implements OnInit{
       console.log(this.registerForm.get('email')?.errors); 
 
     }
-
   }
-
-
 }

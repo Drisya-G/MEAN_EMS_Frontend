@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { Employee } from 'src/modals/employee.model';
 
 @Component({
@@ -26,10 +27,12 @@ export class EmployeeComponent implements OnInit {
   }
   ngOnInit(): void {
     console.log(this.employee);
+    
   }
 
 
 deleteEmployeeClicked() {
+  alert('Are you sure to delete ?')
   this.onRemoveEmployee.emit(this.employee.id);
 }
 

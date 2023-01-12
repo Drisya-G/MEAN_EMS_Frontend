@@ -1,0 +1,68 @@
+<div class="contact mt-5 pt-5 pb-5"
+  style="background: url('../../assets/images/co.jpg')no-repeat; background-size: cover;">
+  <div class="row">
+    <div class="col-4 img-fluid">
+      <img src="../../assets/images/contact-us.jpg" alt="" class=" text-center h-100 w-100  rounded-pill">
+    </div>
+    <div class="col-8">
+      <form [formGroup]="contactForm" class="ms-5 me-5 ps-5 pe-5 pb-5 mb-3 shadow-lg rounded"
+        style="background: url(../../assets/images/contact.jpg)no-repeat; background-size: cover;">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label text-light pt-5">Name</label>
+          <input type="uname" formControlName="uname" class="form-control rounded-pill" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+        </div>
+
+        <div style="color:red" *ngIf="this.contactForm.get('uname')?.touched&&this.contactForm.get('uname')?.errors">
+          invalid username</div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label text-light">Email address</label>
+          <input type="email" formControlName="email" class="form-control rounded-pill" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <div style="color:red" *ngIf="this.contactForm.get('email')?.touched&&this.contactForm.get('email')?.errors">
+          invalid email</div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label text-light">Message</label>
+          <textarea class="form-control rounded" formControlName="message" id="user" rows="3"></textarea>
+        </div>
+
+
+        <div style="color:red"
+          *ngIf="this.contactForm.get('message')?.touched&&this.contactForm.get('message')?.errors">
+          invalid message</div>
+
+        <button type="submit" class="btn btn-primary" (click)="sendmsg()">Send Message</button>
+        
+
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+    <div class="col-4">
+      <p>
+        
+        <button class="btn bg-light text-primary border border-primary border-2 shadow " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Show Message
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body border border-2 border-info shadow-lg me-2 ">
+          <i>May I Know the Backing Function</i>
+          
+          <i>{{msg}}</i>
+      </div>
+    </div>
+   
+
+  </div>
+
+
+</div>

@@ -1,19 +1,24 @@
 
-<div class="container-fluid g-0">
+<div class="container-fluid g-0 mt-5 pt-2">
 
     <main class="black-borde">
 
         <!-- TOOBAR TO ADD AND SEARCH EMPLOYEES -->
         <div class="toolbar">
 
-            <div class="add-employee mt-5">
-                <button type="button" class="btn text-success border border-3 btn-lg fs-3 fw-bolder" data-bs-toggle="modal"
+            <div class="add-employee mt-5 me-4 ms-2">
+                <button type="button" class="addemp btn text-success border border-3 border-light btn-lg fs-3 fw-bolder" data-bs-toggle="modal"
                     data-bs-target="#exampleModal" #addEmployeeButton>Add Employee</button>
             </div>
 
             <div class="search-employees mt-5">
                 <input type="search" class="form-control" placeholder="Search Employees"
                     (input)="searchEmployees(searchInput.value)" #searchInput>
+            </div>
+
+            <div>
+                <input type="button" class="btn btn-danger rounded me-2 mt-5 text-light" value="logout"
+                (click)="logout()">
             </div>
 
         </div>
@@ -23,7 +28,7 @@
 
             <div class="row mt-5" *ngIf="employees.length == 0">
                 <div class="col text-center">
-                    <span class="text-light fs-2 fw-bold fst-italic">There are No Employees Added!</span>
+                    <span class="text-secondary fs-2 fw-bold fst-italic">There are No Employees Added!</span>
                 </div>
                 <div class="text-center mt-5 mb-5 para">
                     <p>Once you have setup the details of your organization,</p> <p>the next step
@@ -32,7 +37,7 @@
                           users to your organization.</p><p> Adding employees is the first step before 
                           viewing the Organizational tree.</p>
                 </div>
-                <div class="text-center text-light">
+                <div class="text-center text-dark">
                     <p>
                         Say goodbye to spreadsheets and rigid systems.</p><p> Choose Zoho People, the smart HR tool.
                         </p><p>Smart tool that makes employee management </p><p>
@@ -139,7 +144,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Company Name"
+                            <input type="text" class="form-control" placeholder="Department"
                                 formControlName="company">
                         </div>
                     </div>

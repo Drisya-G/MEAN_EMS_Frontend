@@ -15,4 +15,6 @@ toggleNavbarCollapsing() { //to collapse the header
     this.navbarCollapsed = !this.navbarCollapsed;
 }
 
+
+
 }

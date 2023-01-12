@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup ,FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Employee } from 'src/modals/employee.model';
 import { ServiceService } from '../services/service.service';
 
@@ -28,7 +29,7 @@ export class EmployeeAddComponent implements OnInit ,AfterViewInit {
   
 
 
-  constructor(private fb: FormBuilder, private employeeService: ServiceService) {
+  constructor(private fb: FormBuilder, private employeeService: ServiceService,private router:Router) {
 
     this.employeeForm = fb.group({});
     this.employees = [];
@@ -57,11 +58,37 @@ export class EmployeeAddComponent implements OnInit ,AfterViewInit {
     });
 
 
+    if(!localStorage.getItem('currentId')){
+      alert("please login first ");
+      this.router.navigateByUrl('');
+
+    }
+
+
   }
 
   ngAfterViewInit(): void {
     this.buttontemp.nativeElement.click();
+    history.pushState(null, '');
+
   }
+
+ 
+    
+  logout() {
+    //remove uname
+    alert('Do You Want to Logout ?')
+    localStorage.removeItem('currentuser');
+    localStorage.removeItem('currentId');
+
+    //navigate to login page
+
+    this.router.navigateByUrl('');
+    history.forward();
+
+
+  }
+  
 
   addEmployee() {
     let employee: Employee = {

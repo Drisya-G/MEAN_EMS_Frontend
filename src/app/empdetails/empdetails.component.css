@@ -23,7 +23,5 @@
   }
 
   .employeedetail{
-    /* background-color: rgb(154, 228, 238); */
-    background: url('../../assets/images/emp2.jpg')no-repeat;
-    background-size: cover;
+    background-color: rgb(154, 228, 238);
   }

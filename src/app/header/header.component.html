@@ -1,37 +1,36 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-secondary p-2   fixed-top">
-    <div class="container">
-      <a class="navbar-brand  " href="index.html">
-        <img src="../../assets/images/emplog.jpg" class="logo">
-  
-      </a>
-      <h4 class="text-light me-5  ">Zoho System</h4>
-  
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        (click)="toggleNavbarCollapsing()" aria-controls="navbarCollapse" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" [class.collapse]="navbarCollapsed" id="navbarCollapse">
-       
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" routerLink="/aboutus"  routerLinkActive="active">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"   routerLink="/"  routerLinkActive="active">Contact us</a>
-          </li>
-         
-        </ul>
-       
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="login">Login</a>
-          </li>
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary p-3   fixed-top">
+  <div class="container">
+    <a class="navbar-brand  " href="index.html">
+      <img src="../../assets/images/emplog.jpg" class="logo">
+
+    </a>
+    <h4 class="text-light me-5  ">Zoho System</h4>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      (click)="toggleNavbarCollapsing()" aria-controls="navbarCollapse" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [class.collapse]="navbarCollapsed" id="navbarCollapse">
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/aboutus" routerLinkActive="active">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/empdetails" routerLinkActive="active">Employees</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact-us</a>
+        </li>
+
       </ul>
-  
-      </div>
+
+      
+
     </div>
-  </nav>
+  </div>
+</nav>

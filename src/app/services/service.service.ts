@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpClientModule, HttpHeaders  } from '@angular/common/http';
 import { Employee } from 'src/modals/employee.model';
 
+
+
 // const options={
 //   headers:new HttpHeaders()
 // }
@@ -10,6 +12,9 @@ import { Employee } from 'src/modals/employee.model';
   providedIn: 'root'
 })
 export class ServiceService {
+  unshift(emp: Employee) {
+    throw new Error('Method not implemented.');
+  }
   baseUrl='http://localhost:3000/posts';
   // json-server --watch db.json
 
@@ -61,8 +66,7 @@ login(id: any, pswd: any) {
 }
 
 
-
-
+// employee
 
   getEmployees() {
     return this.http.get<Employee[]>(this.baseUrl);
@@ -80,4 +84,9 @@ login(id: any, pswd: any) {
 
 
 
+//contact
 
+
+// contactInfo() {
+//   return this.http.get<Employee[]>(this.baseUrl);
+// }

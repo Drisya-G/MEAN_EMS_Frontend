@@ -15,6 +15,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { EmployeeComponent } from './employee/employee.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { EmpdetailsComponent } from './empdetails/empdetails.component';
+import { ContactComponent } from './contact/contact.component';
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -28,13 +31,16 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     RegisterComponent,
     EmployeeAddComponent,
     EmployeeComponent,
-    DashboardComponent
+    DashboardComponent,
+    EmpdetailsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [],

@@ -1,0 +1,40 @@
+
+
+<div class="container-fluid mt-5 pt-3" style="background: url('../../assets/images/table.jpg')no-repeat; background-size: cover;">
+  
+  <h3 class="mt-5  text-light text-center  ">List Of Employees</h3>
+  
+  
+  <div class="row mt-2">
+
+    <div class="col-2"></div>
+    <div class="col-8 table-responsive container mt-5 mb-5 rounded  " 
+     >
+      <table class="" style="background: url('../../assets/images/tab.jpg')no-repeat; background-size: cover;" >
+        <thead >
+        <tr>
+         
+          <th class="pt-2 pb-3 ps-5 text-center">Name</th>
+          <th class="pt-2 pb-3 ps-5 text-center">Education</th>
+          <th class="pt-2 pb-3 ps-5 text-center">Department</th>
+          <th class="pt-2 pb-3 ps-5 text-center">Experience</th>
+          <th class="pt-2 pb-3 ps-5 text-center">Salary</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employeeList;
+          let i=index">
+          <td class="pt-2 pb-3 ps-5 text-center">{{employee.firstname }}   {{employee.lastname}}</td>
+          <td class="pt-2 pb-3 ps-5 text-center">{{employee.education}}</td>
+          <td class="pt-2 pb-3 ps-5 text-center">{{employee.company}}</td>
+          <td class="pt-2 pb-3 ps-5 text-center">{{employee.jobExperience}}</td>
+          <td class="pt-2 pb-3 ps-5 text-center">{{employee.salary}}</td>
+        </tr>
+        </tbody>
+      
+      </table>
+    </div>
+    <div class="col-2"></div>
+  </div>
+</div>

@@ -1,28 +1,64 @@
 {
   "posts": [
     {
-      "firstname": "Drisya",
-      "lastname": "G",
-      "birthdate": "2022-03-22",
-      "gender": "f",
-      "education": "graduate",
-      "company": "TCS",
-      "jobExperience": 3,
-      "salary": 6,
-      "profile": "drisya.jpeg",
-      "id": 1
-    },
-    {
-      "firstname": "Drisya",
+      "firstname": "Diya ",
       "lastname": "G",
       "birthdate": "2022-12-01",
       "gender": "f",
+      "education": "diploma",
+      "company": "Developer",
+      "jobExperience": 1,
+      "salary": 6,
+      "profile": "diya.jpeg",
+      "id": 7
+    },
+    {
+      "firstname": "sriya",
+      "lastname": "s",
+      "birthdate": "2022-11-28",
+      "gender": "f",
       "education": "graduate",
-      "company": "TCS",
+      "company": "Software Tester",
+      "jobExperience": 4,
+      "salary": 7,
+      "profile": "Sriya.jpg",
+      "id": 10
+    },
+    {
+      "firstname": "Soja",
+      "lastname": "K",
+      "birthdate": "2022-11-30",
+      "gender": "f",
+      "education": "graduate",
+      "company": "Software Engineer ",
       "jobExperience": 3,
       "salary": 3,
       "profile": "soja.jpg",
-      "id": 2
+      "id": 11
+    },
+    {
+      "firstname": "Drisya ",
+      "lastname": "G",
+      "birthdate": "2023-01-18",
+      "gender": "f",
+      "education": "phD",
+      "company": "Developer",
+      "jobExperience": 5,
+      "salary": 7,
+      "profile": "Drisya.jpg",
+      "id": 12
+    },
+    {
+      "firstname": "Athira",
+      "lastname": "H",
+      "birthdate": "2002-01-07",
+      "gender": "f",
+      "education": "post graduate",
+      "company": "Data Science",
+      "jobExperience": 3,
+      "salary": 5,
+      "profile": "Athira.jpg",
+      "id": 13
     }
   ],
   "comments": [],
